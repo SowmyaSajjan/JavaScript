@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmnet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #div,#flip{
+            padding: 5px;
+            text-align: center;
+            background-color: burlywood;
+            border: solid 1px #c3c3c3;
+        }
+        #div{
+            padding: 50px;
+            display: none;
+        }
+        #div1{
+            background-color: #98bf21;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        #callback{
+            padding-top: 100px;
+            padding-left: 30px;
+            text-align: left;
+        }
+        #div2,#div3{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>If you click on me, I will disappear.</p>
+    <br>
+    <div id="flip">
+        click to slide down panel
+    </div>
+    <div id="div">
+        Hello
+    </div>
+    <br>
+    <button id="ani"> Animation </button>
+    <br>
+    <div id="div1">
+    </div>
+    <br>
+    <div id="callback">
+        this is a paragraph
+    </div>
+    <button id="hide">Hide</button>
+    <div id="div2">
+        the quick <b> brown fox</b> jumps over the <b> lazy dog</b>
+    </div>
+    <button id="text">Text</button>
+    <button id="html">Html</button>
+    <div id="div3">
+        name: <input type="text" id="name" value=""/><br>
+        class: <input type="text" id="class" value=""/>
+    </div>
+    <button id="b1"> Set Name</button>
+    <button id="b2"> Set class</button>
+    <br>
+    <button id="rename">Replace name</button>
+    <button id="reclass">Replace class</button>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #div-effect{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Wlcome to jquery</h1>
+    <p id="p-tag">This library depends on jQuery. You must also load jQuery before loading this module. Version 1.8.3 is not hosted due to its short life, and the alias 1.8.3 actually loads 1.8.4.</p>
+    <p id="p2">
+        you ca get the complete script tag.
+    </p>
+    <input type="button" value="click me" id="btn">
+    <div id="div-effect">
+        Div 1
+    </div>
+    <div id="div-effect1">
+        Div 2
+    </div>
+    <div id="div-effect2">
+        Div 3
+    </div>
+    <script>
+        /*function hide(){
+            document.getElementById('p-tag').style.visibility='hidden';
+        }*/
+       /* $(document).ready($('#btn').click(function(){  //click is an event
+            $('#p-tag').hide();                        // hide is an effect
+        }))*/
+
+       /* $(document).ready(
+            $('#div-effect1').fadeOut(3000)('')
+        )*/
+        /*$(document).ready($('#btn').click(function(){  //click is an event
+            $('#p2').toggle();                        // hide is an effect
+        }))*/
+        $(document).ready(
+            $('#div-effect1').animate({width: '800px'},3000),
+            $('#div-effect').fadeOut(3000),
+            $('#div-effect2').animate({height: '500px'},3000),
+            $('#btn').click(function(){
+            $('#p2').toggle();
+                                }),
+            $('#h1').mouseenter(function(){
+                $('h1').hide()})
+        )
+    </script>
+</body>
+</html>
