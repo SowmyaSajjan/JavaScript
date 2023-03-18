@@ -1,6 +1,5 @@
-# JavaScript
+# SPEED TYPING GAME
 
-SPEED TYPING GAME
 
 We will be designing a typing game using JavaScript that presents a simple typing challenge and finds the performance of typing by calculating the Characters Per Minute (CPM), Words Per Minute (WPM) and the accuracy of the typed characters.
 The game shows a series of quotes that have to be typed in a specified time limit, as fast as possible. A higher typing speed would show a higher WPM value. Incorrectly typed characters would be marked accordingly during typing.
